@@ -5,11 +5,15 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import java.util.logging.Logger;
+
 public class login {
+    Logger log = Logger.getLogger("Login");
     @Given("user is on login page")
     public void userIsOnLoginPage() {
+        log.info("This is my log message");
         System.out.println("User is on login page");
-        System.out.println("Today is Wednesday");
+
     }
 
     @When("user enters valid username and password")
